@@ -1,0 +1,244 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Overall */
+html,body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+body {
+    background: #f9f7f2;
+    color: #00203fff;
+    padding-top: 70px;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    color: #fdde44ff;
+    text-decoration: none;
+  }
+  
+  h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  p {
+    margin: 10px;
+  }
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00203fff;
+    color: #fdde44ff;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 50px;
+    transition: 0.5s;
+    overflow: auto;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  .navbar ul li {
+    margin: 0px 5px;
+    padding: 5px;
+  }
+  .navbar li a {
+    padding: 20px 30px;
+  }
+  .navbar li a:hover{
+    background-color: #28334AFF;
+  }
+  .navbar li a.current {
+    border-bottom: #fdde44ff solid 2px;
+  }
+  .navbar li a.current:hover .down {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .navbar li a.current:hover{
+    background-color: #00203fff;
+  }
+  /* Dropdown */
+  .arrow {
+    border: solid #fdde44ff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  } */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  /* .dropdown-content {
+    float: left;
+    display: none;
+    position:fixed;
+    min-width: 160px;
+    z-index: 1;
+  } */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #00203fff;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .columns {
+    float: left;
+    width: 14.25%;
+    padding: 10px;
+    background-color: #ccc;
+    height: 250px;
+  }
+
+  .dropdown-content a {
+    color: #fdde44ff;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    background-color: #00203fff;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .down {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  /* State Name */
+  .title {
+      padding: 50px;
+  }
+  .title h1 {
+      font-size: 34px;
+      text-align: center;
+  }
+  /* State Monument */
+  .flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+  }
+  
+  .flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .flex-columns .column .column-1,
+  .flex-columns .column .column-2 {
+    height: 100%;
+  }
+  
+  .flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .flex-columns h2 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  
+  .flex-columns h4 {
+    margin-bottom: 10px;
+  }
+  
+  .flex-columns p {
+    margin: 20px 0;
+  } 
+
+  .bg-dark {
+      background-color: #00203fff;
+      color: #b89535;
+  }
+  .bg-light {
+      background-color: #f9f7f2;
+      color: #00203fff;
+  }
+  .meta {
+  margin-bottom: 30px;
+}
+  /* .bg-dark a {
+    padding: 5px 10px 5px 10px;
+    border: #fdde44ff solid 2px ;
+    border-radius: 15px;
+  }
+  .bg-dark a:hover {
+      background-color: #fdde44ff;
+      color: #00203fff;
+    }
+    .bg-light a {
+        padding: 5px 10px 5px 10px;
+        background-color: #fdde44ff;
+        color: #00203fff;
+        border-radius: 15px;
+    }
+    .bg-light a:hover {
+        background-color: #00203fff;
+        color: #fdde44ff;
+      } */
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    height: 200px;
+    background-color: #00203fff;
+  }
+
+
+
+.footer a {
+  color: #b89535;
+}
+
+.footer a:hover {
+  color: #00203fff;
+}
+.footer p {
+  color: #b89535;
+  padding: 0px 20px 40px 20px;
+
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}
